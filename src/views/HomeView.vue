@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
+import BarSetupFunc from "../components/BarSetupFunc.vue";
+import BarScriptSetup from "../components/BarScriptSetup.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <BarSetupFunc />
+    <BarScriptSetup />
   </main>
 </template>

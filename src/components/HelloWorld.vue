@@ -2,26 +2,6 @@
 defineProps<{
   msg: string;
 }>();
-
-function foo() {
-  return "bar";
-}
-
-defineExpose({
-  foo,
-});
-</script>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  methods: {
-    bar() {
-      return this.foo();
-    },
-  },
-});
 </script>
 
 <template>
@@ -29,11 +9,9 @@ export default defineComponent({
     <h1 class="green">{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-      What's next?
+      <a target="_blank" href="https://vitejs.dev/">Vite</a> +
+      <a target="_blank" href="https://vuejs.org/">Vue 3</a>. What's next?
     </h3>
-    <div>Bar: {{ bar() }}</div>
   </div>
 </template>
 
